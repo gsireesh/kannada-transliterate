@@ -1,0 +1,9 @@
+<h2> Text to be transliterated: </h2>
+<form method="GET" action="/">
+	<input type="text", name="text">
+    <input type="submit" value="Go">
+</form>
+{% if transliterated_text %}
+	<h2>Transliterated Text:</h2>
+	<p>{{ transliterated_text }}
+{% endif %}
