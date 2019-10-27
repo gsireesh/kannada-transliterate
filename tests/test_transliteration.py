@@ -10,7 +10,7 @@ class TestTransliteration(TestCase):
         for original, expected_trans in kn_iast_mappings.items():
             actual_trans = transliterate_kn_iast(original)
             if kn_iast_classes.get(original) == CONSONANT_CHAR_CLASS:
-            	expected_trans = expected_trans + "a"
+                expected_trans = expected_trans + "a"
             self.assertEqual(expected_trans, actual_trans)
 
     def test_multicharacter_strings(self):
