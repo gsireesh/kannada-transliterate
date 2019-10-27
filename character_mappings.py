@@ -1,0 +1,101 @@
+kn_iast = {
+    "vowels": {
+        "ಅ": "a",
+        "ಆ": "ā",
+        "ಇ": "i",
+        "ಈ": "ī",
+        "ಉ": "u",
+        "ಊ": "ū",
+        "ಋ": "ṛ",
+        "ಌ": "ḷ",  # vocalic L, unused
+        "ಎ": "e",
+        "ಏ": "ē",
+        "ಐ": "ai",
+        "ಒ": "o",
+        "ಓ": "ō",
+        "ಔ": "au",
+        "ೞ": "ɺ",  # similar to tamil zh sound
+        "ೠ": "lɨ",  # Not sure if these two are correct, I've never seen them used.
+        "ೡ": "lɨː",
+    },
+    "diacritics": {
+        "ಀ": "",  # spacing for candrabindu
+        "ಁ": "",  # candrabindu. not in common use.
+        "ಂ": "ṁ",
+        "ಃ": "ḥ",
+        "಼": "",  # nukta, used to do things like f?? Not in common use.
+        "ಽ": "",  # avagraha
+        "ಾ": "ā",
+        "ಿ": "i",
+        "ೀ": "ī",
+        "ು": "u",
+        "ೂ": "ū",
+        "ೃ": "ṛ",
+        "ೄ": "ṝ",
+        "೅": "",  # unused
+        "ೆ": "e",
+        "ೇ": "ē",
+        "ೈ": "ai",
+        "ೊ": "o",
+        "ೋ": "ō",
+        "ೌ": "au",
+        "್": "",  # virāma
+        "ೕ": "",  # length mark, untranscribed solo.
+        "ೖ": "",  # ai length mark, untranscribed solo.
+        "ೡ": "lɨː",
+        "ೢ": "lɨ",
+        "ೣ": "lɨː",
+    },
+    "consonants": {
+        "ಕ": "kø",
+        "ಖ": "kh",
+        "ಗ": "g",
+        "ಘ": "gh",
+        "ಙ": "ṅ",
+        "ಚ": "c",
+        "ಛ": "ch",
+        "ಜ": "j",
+        "ಝ": "jh",
+        "ಞ": "ñ",
+        "ಟ": "ṭ",
+        "ಠ": "ṭh",
+        "ಡ": "ḍ",
+        "ಢ": "ḍh",
+        "ಣ": "ṇ",
+        "ತ": "t",
+        "ಥ": "th",
+        "ದ": "d",
+        "ಧ": "dh",
+        "ನ": "n",
+        "ಪ": "p",
+        "ಫ": "ph",
+        "ಬ": "b",
+        "ಭ": "bh",
+        "ಮ": "m",
+        "ಯ": "y",
+        "ರ": "r",
+        "ಱ": "ṟ",
+        "ಲ": "l",
+        "ಳ": "ḷ",
+        "಴": "ḻ",
+        "ವ": "v",
+        "ಶ": "ś",
+        "ಷ": "ṣ",
+        "ಸ": "s",
+        "ಹ": "h",
+    },
+    "misc": {
+        "೦": "0",
+        "೧": "1",
+        "೨": "2",
+        "೩": "3",
+        "೪": "3",
+        "೫": "5",
+        "೬": "6",
+        "೭": "7",
+        "೮": "8",
+        "೯": "9",
+        "ೱ": "",  # ardhavisarga symbols. Largely unused.
+        "ೲ": "",  # ardhavisarga symbols. Largely unused.
+    },
+}
