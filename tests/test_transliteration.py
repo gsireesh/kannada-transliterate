@@ -14,7 +14,7 @@ class TestTransliteration(TestCase):
             self.assertEqual(expected_trans, actual_trans)
 
     def test_multicharacter_strings(self):
-        pairs = [("ಕನ್ನಡ", "kannaḍa"), ("ಬರಹ", "baraha"), ("ಕೇನ್ದ್ರದಿನ್ದ", "kēndradinda")]
+        pairs = [("ಕನ್ನಡ ಬರಹ", "kannaḍa baraha"), ("ಕೇನ್ದ್ರದಿನ್ದ", "kēndradinda")]
 
         for original, expected_trans in pairs:
             actual_trans = transliterate_kn_iast(original)
