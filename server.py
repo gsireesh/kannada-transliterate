@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from flask_wtf import FlaskForm
-from wtforms import StringField
+from wtforms import TextAreaField
 from wtforms.validators import DataRequired
 
 from transliterate import transliterate_kn_iast
@@ -8,7 +8,7 @@ from transliterate import transliterate_kn_iast
 
 class TransliterationForm(FlaskForm):
     name = "test"
-    text = StringField("text")
+    text = TextAreaField("text")
 
 
 app = Flask(__name__)
@@ -24,4 +24,4 @@ def submit():
         app.logger.info(f"Returning transliterated text: {transliterated_text}")
     else:
         transliterated_text = None
-    return render_template("index.html", form=form, transliterated_text=transliterated_text)
+    return render_template("index.html", form=form, transliterated_text=transliterated_text, existing_text=original_text)
