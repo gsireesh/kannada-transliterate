@@ -12,7 +12,8 @@ class TransliterationForm(FlaskForm):
 
 
 app = Flask(__name__)
-app.logger.setLevel('INFO')
+app.logger.setLevel("INFO")
+
 
 @app.route("/", methods=("GET",))
 def submit():
@@ -24,4 +25,9 @@ def submit():
         app.logger.info(f"Returning transliterated text: {transliterated_text}")
     else:
         transliterated_text = None
-    return render_template("index.html", form=form, transliterated_text=transliterated_text, existing_text=original_text)
+    return render_template(
+        "index.html",
+        form=form,
+        transliterated_text=transliterated_text,
+        existing_text=original_text,
+    )
